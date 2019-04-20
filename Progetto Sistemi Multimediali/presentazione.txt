@@ -1,0 +1,6 @@
+Per la creazione del progetto assegnato ho deciso di usare SVG al posto di Canvas perchè, a mio avviso,
+è molto più veloce e pratico per la creazione di figure geometriche come richieste in questo caso.
+Ho usato i tag HTML per il titolo e intestazione del progetto, mentre per il testo (Clicca sul cerchio per cambiare colore, Clicca sul rettangolo per cambiare colore)
+ho preferito usare ancora SVG ( tag text e tag tspan), affiancandolo a del CSS per il colore, la dimensione e il tipo di font da attribuire al testo.
+In fine ho usato JAVASCRIPT per creare lo script [ document.getElementById("...").onclick = function() {document.getElementById("...").style.fill="..."} ]
+che al click del mouse cambia i colori delle due forme geometriche. 

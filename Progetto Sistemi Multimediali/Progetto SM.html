@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Progetto di Raggi Raffaele</title>
+
+        <style>
+
+            .text {
+                fill:black;
+                font: bold 18px sans-serif;
+            }
+
+        </style>
+
+    </head>
+    <h2>Progetto di RAGGI RAFFAELE
+        <br>Uso dell'elemento Canvas/SVG e Javascript in HTML5</h2>
+
+    <body>
+
+    <svg height="450" width="450">
+
+       <rect id="rettangolo" x="130" y="60" width="300" height="200" fill="blue"; stroke-width="3" stroke="black"/>
+       <circle id="cerchio" cx="140" cy="160" r="90" stroke="black" stroke-width="3" fill="red"/>
+
+        <text>
+        <tspan class="text" x="10" y="350">Clicca sul cerchio per cambiare colore</tspan>
+        <tspan class="text" x="10" y="370">Clicca sul rettangolo per cambiare colore</tspan>
+        </text>
+
+    </svg>
+
+        <script type="text/javascript">
+
+            document.getElementById("cerchio").onclick = function() {
+
+                document.getElementById("rettangolo").style.fill="yellow";
+            }
+
+              document.getElementById("rettangolo").onclick = function() {
+
+                document.getElementById("cerchio").style.fill="blue";
+            }
+
+        </script>
+          
+    </body>
+
+</html>
